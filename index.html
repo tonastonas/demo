@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Study: Chiến Dịch Chuyển Đổi Trà An Nhiên</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8;
+        }
+        .stat-card {
+            background-color: white;
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .stat-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -2px rgb(0 0 0 / 0.1);
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            max-height: 400px;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <div class="container mx-auto p-4 md:p-8">
+
+        <header class="text-center mb-12">
+            <h1 class="text-4xl md:text-6xl font-black text-blue-900 uppercase tracking-wide">CASE STUDY</h1>
+            <p class="text-xl md:text-2xl font-semibold text-blue-700 mt-2">Từ 0 đến 200 Triệu Lợi Nhuận</p>
+            <p class="text-md text-gray-600 mt-1">Phân tích Chiến dịch Promotion tập trung vào Doanh số của Dược trà An Nhiên</p>
+        </header>
+
+        <main class="space-y-12">
+            
+            <section class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div class="stat-card p-8">
+                    <h2 class="text-2xl font-bold text-blue-800 mb-4 flex items-center">
+                        <span class="text-3xl mr-3">🎯</span> MỤC TIÊU & "MỒI CÂU"
+                    </h2>
+                    <div class="space-y-6">
+                        <div>
+                            <p class="font-semibold text-gray-500">Mục tiêu chính (The Goal)</p>
+                            <p class="text-4xl font-extrabold text-green-600">200.000.000 VNĐ</p>
+                            <p class="text-sm text-gray-600">Lợi nhuận ròng sau khi trừ mọi chi phí.</p>
+                        </div>
+                        <div class="border-t pt-6">
+                            <p class="font-semibold text-gray-500">Sản phẩm (The Offer)</p>
+                            <p class="text-2xl font-bold text-blue-900">Combo Ngon Giấc</p>
+                            <p class="text-sm text-gray-600">1 Hộp Trà Tim Sen + 1 Hộp Trà Hoa Cúc</p>
+                            <div class="mt-4 flex items-baseline justify-between bg-blue-50 p-4 rounded-lg">
+                                <div>
+                                    <p class="text-3xl font-extrabold text-blue-700">199.000 VNĐ</p>
+                                    <p class="font-semibold text-green-700">Ưu đãi: Freeship Toàn Quốc</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stat-card p-8">
+                    <h2 class="text-2xl font-bold text-blue-800 mb-4 flex items-center">
+                        <span class="text-3xl mr-3">🧮</span> BÀI TOÁN KINH TẾ / 1 COMBO
+                    </h2>
+                    <div class="space-y-3 text-lg">
+                        <div class="flex justify-between items-center">
+                            <span class="font-semibold">Giá bán</span>
+                            <span class="font-bold text-green-600">+ 199.000</span>
+                        </div>
+                        <div class="flex justify-between items-center text-gray-600">
+                            <span>Giá vốn Trà Tim Sen</span>
+                            <span class="font-medium">- 45.000</span>
+                        </div>
+                        <div class="flex justify-between items-center text-gray-600">
+                            <span>Giá vốn Trà Hoa Cúc</span>
+                            <span class="font-medium">- 35.000</span>
+                        </div>
+                        <div class="flex justify-between items-center text-gray-600">
+                            <span>Chi phí Freeship</span>
+                            <span class="font-medium">- 20.000</span>
+                        </div>
+                        <div class="border-t-2 border-blue-200 mt-4 pt-4 flex justify-between items-center">
+                            <span class="text-xl font-extrabold text-blue-900">Lợi nhuận ròng</span>
+                            <span class="text-xl font-extrabold text-blue-700 p-2 bg-blue-100 rounded-md">= 99.000</span>
+                        </div>
+                    </div>
+                     <p class="text-xs text-center mt-4 text-gray-500 italic">Đây là số tiền tối đa có thể chi cho marketing để có 1 đơn hàng mà không bị lỗ.</p>
+                </div>
+            </section>
+
+            <section class="stat-card p-8">
+                <h2 class="text-3xl font-extrabold text-center text-blue-900 mb-8">CHIẾN LƯỢC NGÂN SÁCH</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                    <div>
+                        <p class="text-lg font-semibold text-gray-500">ROAS Mục Tiêu</p>
+                        <p class="text-6xl font-black text-blue-700">x4</p>
+                        <p class="text-sm text-gray-600">1đ quảng cáo mang về 4đ doanh thu</p>
+                    </div>
+                    <div>
+                        <p class="text-lg font-semibold text-gray-500">Doanh Thu Cần Đạt</p>
+                        <p class="text-5xl md:text-6xl font-black text-blue-700">~808M</p>
+                        <p class="text-sm text-gray-600">Để đạt mục tiêu lợi nhuận</p>
+                    </div>
+                    <div>
+                        <p class="text-lg font-semibold text-gray-500">Tổng Ngân Sách</p>
+                        <p class="text-5xl md:text-6xl font-black text-blue-700">~288M</p>
+                        <p class="text-sm text-gray-600">Đề xuất cho toàn chiến dịch</p>
+                    </div>
+                </div>
+                <div class="mt-10 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <h3 class="text-xl font-bold text-center mb-4 text-blue-800">Phân Bổ Ngân Sách Cố Định</h3>
+                        <div class="chart-container h-64 md:h-80">
+                            <canvas id="budgetDonutChart"></canvas>
+                        </div>
+                    </div>
+                    <div class="text-gray-700 space-y-4">
+                        <div class="p-4 bg-blue-50 rounded-lg">
+                            <p class="font-bold text-blue-900 text-lg">70% - Quảng Cáo (202 Triệu)</p>
+                            <p class="text-sm">Tập trung vào quảng cáo Conversion để ra đơn trực tiếp và Remarketing để bám đuổi khách hàng tiềm năng.</p>
+                        </div>
+                        <div class="p-4 bg-green-50 rounded-lg">
+                            <p class="font-bold text-green-900 text-lg">30% - Nội Dung (43 Triệu)</p>
+                            <p class="text-sm">Xây dựng Landing Page bán hàng chuyên nghiệp, sản xuất video feedback và hình ảnh quảng cáo chất lượng cao.</p>
+                        </div>
+                         <div class="p-4 bg-gray-100 rounded-lg">
+                            <p class="font-bold text-gray-800 text-lg">Ưu đãi (Chi phí biến đổi)</p>
+                            <p class="text-sm">Chi phí giá vốn sản phẩm và Freeship được tính trực tiếp vào lợi nhuận của mỗi đơn hàng, không phải ngân sách cố định.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="stat-card p-8">
+                <h2 class="text-3xl font-extrabold text-center text-blue-900 mb-8">ĐÍCH ĐẾN: CÁC KPI QUAN TRỌNG NHẤT</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="p-6 bg-yellow-50 rounded-lg text-center">
+                        <p class="text-lg font-semibold text-yellow-800">HÒA VỐN</p>
+                        <p class="text-5xl font-black text-yellow-600 my-2">2,475</p>
+                        <p class="text-sm text-yellow-700">combos cần bán để thu hồi chi phí marketing cố định (245tr).</p>
+                    </div>
+                    <div class="p-6 bg-green-50 rounded-lg text-center">
+                        <p class="text-lg font-semibold text-green-800">ĐẠT MỤC TIÊU</p>
+                        <p class="text-5xl font-black text-green-600 my-2">4,060</p>
+                        <p class="text-sm text-green-700">combos cần bán để đạt lợi nhuận ròng 200 triệu.</p>
+                    </div>
+                    <div class="p-6 bg-red-50 rounded-lg text-center">
+                        <p class="text-lg font-semibold text-red-800">CPA MỤC TIÊU</p>
+                        <p class="text-5xl font-black text-red-600 my-2">~50K</p>
+                        <p class="text-sm text-red-700">chi phí quảng cáo chấp nhận được để có 1 đơn hàng.</p>
+                    </div>
+                    <div class="p-6 bg-purple-50 rounded-lg text-center">
+                        <p class="text-lg font-semibold text-purple-800">ROAS THỰC ĐẠT</p>
+                        <p class="text-5xl font-black text-purple-600 my-2">x4.0</p>
+                        <p class="text-sm text-purple-700">1đ quảng cáo thu về 4đ doanh thu, hoàn thành mục tiêu.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="stat-card p-8">
+                 <h2 class="text-3xl font-extrabold text-center text-blue-900 mb-8">Con Đường Đến Lợi Nhuận</h2>
+                 <div class="chart-container h-64">
+                    <canvas id="salesProgressBarChart"></canvas>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="text-center mt-12 py-6 border-t border-gray-300">
+            <p class="text-lg font-bold text-blue-900">💡 KẾT LUẬN</p>
+            <p class="text-md text-gray-700">Một chiến dịch chuyển đổi thành công được xây dựng trên những con số chính xác, không phải sự phỏng đoán.</p>
+        </footer>
+
+    </div>
+
+    <script>
+        function wrapLabels(label, maxWidth) {
+            if (typeof label !== 'string' || label.length <= maxWidth) {
+                return label;
+            }
+            const words = label.split(' ');
+            const lines = [];
+            let currentLine = '';
+            for (const word of words) {
+                if ((currentLine + word).length > maxWidth) {
+                    lines.push(currentLine.trim());
+                    currentLine = '';
+                }
+                currentLine += word + ' ';
+            }
+            lines.push(currentLine.trim());
+            return lines;
+        }
+
+        const tooltipTitleCallback = (tooltipItems) => {
+            const item = tooltipItems[0];
+            let label = item.chart.data.labels[item.dataIndex];
+            if (Array.isArray(label)) {
+                return label.join(' ');
+            }
+            return label;
+        };
+        
+        const sharedChartOptions = {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: {
+                    position: 'bottom',
+                    labels: {
+                        font: {
+                            family: "'Inter', sans-serif",
+                            size: 14,
+                        },
+                        color: '#4A5568'
+                    }
+                },
+                tooltip: {
+                    backgroundColor: '#1A202C',
+                    titleFont: { size: 16, weight: 'bold', family: "'Inter', sans-serif" },
+                    bodyFont: { size: 14, family: "'Inter', sans-serif" },
+                    padding: 12,
+                    cornerRadius: 6,
+                    callbacks: {
+                        title: tooltipTitleCallback
+                    }
+                }
+            }
+        };
+
+        const budgetData = {
+            labels: ['Quảng Cáo (Ads)', 'Nội Dung (Content)'],
+            datasets: [{
+                label: 'Phân Bổ Ngân Sách',
+                data: [70, 30],
+                backgroundColor: [
+                    'rgba(59, 130, 246, 0.8)',
+                    'rgba(16, 185, 129, 0.8)',
+                ],
+                borderColor: [
+                    'rgba(59, 130, 246, 1)',
+                    'rgba(16, 185, 129, 1)',
+                ],
+                borderWidth: 2,
+                hoverOffset: 8
+            }]
+        };
+
+        const budgetDonutCtx = document.getElementById('budgetDonutChart').getContext('2d');
+        new Chart(budgetDonutCtx, {
+            type: 'doughnut',
+            data: budgetData,
+            options: {
+                ...sharedChartOptions,
+                cutout: '60%',
+            }
+        });
+        
+        const salesProgressData = {
+            labels: ['Số Combo Đã Bán'],
+            datasets: [
+                {
+                    label: 'Vùng Hòa Vốn',
+                    data: [2475],
+                    backgroundColor: 'rgba(252, 211, 77, 0.7)',
+                    borderColor: 'rgba(252, 211, 77, 1)',
+                    borderWidth: 1,
+                    barThickness: 60,
+                },
+                {
+                    label: 'Vùng Lợi Nhuận',
+                    data: [4060 - 2475],
+                    backgroundColor: 'rgba(74, 222, 128, 0.7)',
+                    borderColor: 'rgba(74, 222, 128, 1)',
+                    borderWidth: 1,
+                    barThickness: 60,
+                }
+            ]
+        };
+
+        const salesProgressBarCtx = document.getElementById('salesProgressBarChart').getContext('2d');
+        new Chart(salesProgressBarCtx, {
+            type: 'bar',
+            data: salesProgressData,
+            options: {
+                indexAxis: 'y',
+                ...sharedChartOptions,
+                scales: {
+                    x: {
+                        stacked: true,
+                        title: {
+                            display: true,
+                            text: 'Số Lượng Combo',
+                            font: { size: 14, weight: 'bold' },
+                            color: '#4A5568'
+                        },
+                        ticks: {
+                             font: { family: "'Inter', sans-serif" },
+                             color: '#4A5568'
+                        }
+                    },
+                    y: {
+                        stacked: true,
+                         ticks: {
+                             font: { family: "'Inter', sans-serif" },
+                             color: '#4A5568'
+                        }
+                    }
+                },
+                plugins: {
+                    ...sharedChartOptions.plugins,
+                    tooltip: {
+                         ...sharedChartOptions.plugins.tooltip,
+                         callbacks: {
+                            label: function(context) {
+                                let label = context.dataset.label || '';
+                                if (label) {
+                                    label += ': ';
+                                }
+                                if (context.parsed.x !== null) {
+                                    label += new Intl.NumberFormat('vi-VN').format(context.parsed.x) + ' combos';
+                                }
+                                return label;
+                            }
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
